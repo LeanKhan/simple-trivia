@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+
+    <title>Simple Trivia API by Emmanuel Segun-Lean</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simple Trivia API</h1>
+    </header>
+
+    <main>
+      <h3>
+        To get 10 random questions make a GET request to
+      </h3>
+
+      <p>
+        <em>https://crystalline-butternut-wealth.glitch.me/get-questions</em>
+      </p>
+
+      <u>Body:</u>
+      <p>
+        <code>
+          null
+        </code>
+      </p>
+
+      <u>Response:</u>
+      <p>
+        <code>
+          { "questions": ArrayOfQuestions[], "length": Number }
+        </code>
+      </p>
+
+      --- These questions you generated will be saved in the
+      <b
+        ><a
+          href="https://glitch.com/edit/#!/crystalline-butternut-wealth?path=database.json%3A1%3A103"
+          >database.json</a
+        ></b
+      >
+      file ---
+
+      <h3>
+        To answer those specific questions, make a POST to:
+      </h3>
+
+      <p>
+        <em>https://crystalline-butternut-wealth.glitch.me/get-questions</em
+        ><br />
+      </p>
+
+      <u>Body:</u>
+      <p>
+        <code>
+          { "answers": ["A"..."B"] }
+        </code>
+      </p>
+
+      <u>Response:</u>
+      <p>
+        <code>
+          {"score_in_percentage": "70%","score_in_digits": 70}
+        </code>
+      </p>
+    </main>
+  </body>
+</html>

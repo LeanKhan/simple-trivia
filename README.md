@@ -1,2 +1,3 @@
-# simple-trivia
-Created with CodeSandbox
+## Simple Trivia API
+Emmanuel Segun-Lean
+
